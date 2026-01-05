@@ -3,6 +3,7 @@ OpenSCAD library for quickly making patterns of various shapes, intricacies, and
 
 EXAMPLES - code used to generated above minus some translates and curshape being changed per photo
 
+```
 base_points = [
     [0, 0],
     [120, 0],
@@ -17,16 +18,18 @@ base_points = [
 ];
 
 
+
 curshape = TRIANGLE;
 cur_facet_or_points = 100;
 cur_turn = 0;
 
-Poly area is all about giving a polygon and to have shapes places inside its area
+//Poly area is all about giving a polygon and to have shapes places inside its area
 
 poly_area(base_points, shape_height=5, shape_diameter=9, spacing=1, shape=curshape, facet_count_points = cur_facet_or_points, turn = cur_turn);
+```
 
 Hex - places shapes in a staggered row and colum such that it emulates a hex pattern
-
+```
 hex_rectangle_area(
     length = 120,
     width = 120,
@@ -37,9 +40,9 @@ hex_rectangle_area(
     shape = curshape,
     turn = cur_turn
 );
-
+```
 Row Col - places shapes in a simple row column with no staggering
-
+```
 rectangle_area(
     length = 120,
     width = 120,
@@ -50,9 +53,9 @@ rectangle_area(
     shape = curshape,
     turn = cur_turn
 );
-
+```
 Wave / sinusoidal pattern - given wavelength and amplitude it places shapes to indicate a wave
-
+```
 wave_area(
     length = 120,
     width = 120,
@@ -65,9 +68,9 @@ wave_area(
     amplitude = 50,
     wavelength = 200
 );
-
+```
 Hex triangle area - places shapes in a hex pattern in the outline of a triangle
-
+```
 triangle_area(
     length = 120,
     height = 120,
@@ -78,9 +81,9 @@ triangle_area(
     shape = curshape,
     turn = cur_turn
 );
-
+```
 Hex circular outline - places shapes roughly hex in a circular outline
-
+```
 circle_area(
     area_diameter = 120,
     height = 5,
@@ -90,9 +93,9 @@ circle_area(
     shape = curshape,
     turn = cur_turn
 );
-
+```
 Circular - places shapes in a circular pattern with 1 in the center then a circular placement of rings outward
-
+```
 circular_area(
     area_diameter = 120,
     height = 5,
@@ -102,9 +105,9 @@ circular_area(
     shape = curshape,
     turn = cur_turn
 );
-
+```
 Spiral pattern - places shapes in a spiral outward with increased spacing the further from the center
-
+```
 spiral_area(
     area_diameter = 120,
     height = 5,
@@ -115,3 +118,4 @@ spiral_area(
     shape = curshape,
     turn = cur_turn
 );
+```
