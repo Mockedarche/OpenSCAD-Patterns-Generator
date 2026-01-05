@@ -3,6 +3,8 @@ OpenSCAD library for quickly making patterns of various shapes, intricacies, and
 
 EXAMPLES - code used to generated above minus some translates and curshape being changed per photo
 
+
+Poly area is all about giving a polygon and to have shapes places inside its area
 ```
 base_points = [
     [0, 0],
@@ -17,13 +19,9 @@ base_points = [
 
 ];
 
-
-
 curshape = TRIANGLE;
 cur_facet_or_points = 100;
 cur_turn = 0;
-
-//Poly area is all about giving a polygon and to have shapes places inside its area
 
 poly_area(base_points, shape_height=5, shape_diameter=9, spacing=1, shape=curshape, facet_count_points = cur_facet_or_points, turn = cur_turn);
 ```
