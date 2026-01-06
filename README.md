@@ -1,4 +1,5 @@
-OpenSCAD library for quickly making patterns of various shapes, intricacies, and layout!
+More patterns coming soon!
+OpenSCAD library for quickly making patterns of various shapes, intricacies, and layout! 
 ![](https://github.com/Mockedarche/OpenSCAD-Patterns-Generator/blob/main/Media/output.gif?raw=true)
 
 EXAMPLES - code used to generated above minus some translates and curshape being changed per photo
