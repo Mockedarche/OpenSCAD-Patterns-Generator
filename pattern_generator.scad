@@ -312,7 +312,7 @@ module hex_rectangle_area(length, width, height, shape_diameter, distance_betwee
         }
         // clipping volume (does not appear in result)
         translate([0, 0, -1])
-            cube([length, width, 12], center = false);
+            cube([length, width, height + 5], center = false);
 
     }
 }
@@ -356,7 +356,7 @@ module hex_rectangle_area_negative(length, width, height, shape_diameter, distan
             }
             // clipping volume (does not appear in result)
             translate([0, 0, -1])
-                cube([length, width, 12], center = false);
+                cube([length, width, height + 5], center = false);
 
         }
     }
